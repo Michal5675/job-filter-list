@@ -1,0 +1,528 @@
+
+body {
+    background-image: url("images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(180, 29%, 50%);
+    position: relative;
+    z-index: -1;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 
+main container */
+.box {
+    background-color: hsl(180, 18%, 85%);
+    width: 101.7%;
+    min-height: 47.2rem;
+    padding: 6rem 2rem;
+    position: absolute;
+    top: 13.1rem;
+    left: -1.5rem;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0;
+    row-gap: 2rem;
+}
+
+/* cards */
+.tablets {
+    width: 80%;
+    background-color: hsl(180, 33%, 99%);
+    padding: 1rem 1rem 2rem;
+    box-shadow: 0 0 10px 2px hsl(180, 8%, 52%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    grid-column: span 1;
+    grid-row:  span 1;
+    position: relative;
+    border-radius: 5px;
+   
+}
+
+
+h2 {
+    color: hsl(180, 14%, 20%);
+    position: absolute;
+    top: 3.5rem;
+    left: 8rem;
+    font-size: 18.5px;
+    font-weight: 700;
+    margin: 0.6rem 0 0;
+}
+
+
+h3 {
+    color: hsl(180, 29%, 50%);
+    font-size: 15px;
+}
+
+img {
+    border-radius: 50%;
+    float: left;
+}
+
+.btn-filters {
+    outline-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    left: 70rem;
+    width: 20rem;
+}
+
+.btn-filters > *, .buttonFilter {
+    margin: 0 0.5rem;
+    color: hsl(180, 29%, 50%);
+    background: rgba(218, 236, 236, 0.678);
+    padding: 0.4rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 3px;
+    align-self: stretch;
+    position: relative;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 2rem;
+    left: 7.5rem;
+}
+
+.company > * {
+    margin: 0 0.5rem;
+    
+}
+
+.new {
+    background: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 15px;
+    padding: 0.4rem 0.4rem 0.4rem;
+    font-size: 11px;
+    margin: 0;
+    margin-left: 1rem;
+
+}
+
+.featured {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem 0.4rem;
+    font-size: 11px;
+    margin-left: 0.5rem;
+}
+
+img {
+    margin: 1rem 0.3rem 0;
+}
+
+.side-list {
+   position: absolute;
+   top: 6rem;
+   left: 5rem;
+   margin: -0.6rem 0;
+}
+
+li {
+    display: inline-flex;
+    margin: 0 0.5rem;
+    color: hsl(180, 14%, 20%);
+}
+
+
+
+h2:hover {
+    cursor: pointer;
+    color: hsl(180, 29%, 50%);
+}
+
+.btn-filters > *:hover {
+    cursor: pointer;
+    background: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.filter-box {
+    background: hsl(180, 33%, 99%);
+    width: 79%;
+    height: 4.34rem;
+    box-shadow: 0 0 10px 2px hsl(180, 8%, 52%);
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 10.5rem;
+    left: 12rem;
+    z-index: 200;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.filter-box > .clear {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 0.9rem;
+    left: 86.6rem;
+    width: 8ch;
+    font-size: 0.8rem;
+}
+
+.clear:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.filters {
+    width: 80%;
+    position: relative;
+    top: -1.3rem;
+    left: 2.3rem;
+    
+}
+
+.filters > * {
+    margin-left: 2.2rem;
+}
+
+.filters > :first-child {
+    margin-left: 0;
+}
+
+.icon-remove {
+    background: hsl(180, 29%, 50%);
+    border: none;
+    padding: 0 0.2rem;
+    font-weight: 700;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: -1.7rem;
+    height: 100%;
+}
+
+.icon-remove > img {
+    position: relative;
+    top: -0.5rem;
+    left: 0;
+}
+
+.icon-remove:hover {
+    background-color: black;
+}
+
+.icon-remove > img:hover {
+    cursor: pointer;
+}
+
+.hr {
+    display: none;
+}
+
+
+@media all and (max-width: 700px) {
+    body {
+        background-image: url("images/bg-header-mobile.svg");
+        background-size: 120%;
+    }
+
+    .tablets {
+        width: 19em;
+        min-height: 12rem;
+        padding-bottom: 3rem;
+        box-sizing: content-box;
+    }
+
+    img {
+        border-radius: 50%;
+        float: none;
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: -3rem;
+        left: 1.2rem;
+    }
+
+    .company {
+        position: absolute;
+        top: 2.2rem;
+        left: 1rem;
+    }
+
+    h2 {
+    position: absolute;
+    top: 4rem;
+    left: 1.5rem;
+    }
+
+    .side-list {
+        position: absolute;
+        top: 6.5rem;
+        left: -1.3rem;
+     }
+
+     li {
+        display: inline-flex;
+        margin: 0 0.2rem;
+    }
+
+.btn-filters {
+    position: relative;
+    top: 9.5rem;
+    left: 0rem;
+    width: 90%;
+    min-height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 0.6rem;
+}
+ 
+
+
+.box {
+    width: 109%;
+    row-gap: 3.5rem;
+    position: absolute;
+    top: 10.1rem;
+    left: -1.5rem;
+}
+
+.hr {
+    width: 88%;
+    color: hsl(180, 8%, 52%);
+    position: absolute;
+    top: 8.8rem;
+    left: 1.5rem;
+    display: block;
+}
+
+.filter-box {
+    position: absolute;
+    top: 7rem;
+    left: 1rem;
+    width: 21.5em;
+    height: 6rem;
+    z-index: 300;
+}
+
+.filter-box > .clear {
+    position: relative;
+    top: 1.8rem;
+    left: 15rem;
+}
+
+.icon-remove > img {
+   width: 50%;
+   height: 50%;
+}
+
+.filters {
+    width: 62%;
+}
+
+
+.filters > *  {
+    margin-left: 2.2rem;
+}
+
+.filters > :nth-child(3){
+    margin-left: -0.3rem;
+    margin-top: 0.5rem;
+}
+
+.filters > :first-child{
+    margin-left: -0.3rem;
+}
+
+}
+
+@media all and (min-width: 701px) and (max-width: 1200px) {
+
+body {
+    background-image: url("images/bg-header-mobile.svg");
+    background-size: 120%;
+}
+    
+.tablets {
+    width: 36em;
+    min-height: 15rem;
+    padding-bottom: 1rem;
+    box-sizing: content-box;
+}
+img {
+    border-radius: 50%;
+    float: none;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 1.2rem;
+}
+
+.company {
+    position: absolute;
+    top: 3.2rem;
+    left: 1rem;
+}
+
+h2 {
+position: absolute;
+top: 5rem;
+left: 1.5rem;
+}
+
+.side-list {
+    position: absolute;
+    top: 7.5rem;
+    left: -1.3rem;
+ }
+
+ li {
+    display: inline-flex;
+    margin: 0 0.2rem;
+}
+
+.btn-filters {
+position: relative;
+top: 11.5rem;
+left: 0rem;
+width: 90%;
+min-height: 2rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+row-gap: 0.6rem;
+}
+
+
+
+.box {
+width: 104.3%;
+row-gap: 3.5rem;
+position: absolute;
+top: 10.1rem;
+left: -1.5rem;
+}
+
+.hr {
+width: 88%;
+color: hsl(180, 8%, 52%);
+position: absolute;
+top: 10.3rem;
+left: 1.5rem;
+display: block;
+}
+
+.filter-box {
+position: absolute;
+top: 7rem;
+left: 6.2rem;
+width: 38.8em;
+height: 6rem;
+z-index: 300;
+}
+
+.filter-box > .clear {
+position: relative;
+top: 1.8rem;
+left: 29.5rem;
+}
+
+.icon-remove > img {
+width: 50%;
+height: 50%;
+}
+
+.filters {
+width: 73%;
+}
+
+
+.filters > *  {
+margin-left: 2.2rem;
+}
+
+.filters > :nth-child(5){
+margin-left: -0.3rem;
+margin-top: 0.5rem;
+} 
+
+
+.filters > :first-child{
+margin-left: -0.3rem;
+}  
+
+}
+
+@media all and (min-width: 1201px) and (max-width: 1600px) {
+    .btn-filters {
+        position: relative;
+        top: 2.8rem;
+        left: 25rem;
+        width: 60%;
+        min-height: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        row-gap: 0.6rem;
+        }
+    body {
+    background-image: url("images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 120%;  
+        }
+    
+        .box {
+            width: 104.3%;
+            row-gap: 3.5rem;
+            position: absolute;
+            top: 10rem;
+            left: -1.5rem;
+            }    
+    img {
+        border-radius: 50%;
+        float: left;
+        position: relative;
+        top: -2rem;
+        left: 0;
+     }
+
+     .tablets {
+        width: 70em;
+        padding-bottom: 0.5rem;
+        box-sizing: content-box;
+    }
+
+    .filter-box {
+        position: absolute;
+        top: 7rem;
+        left: 6.6rem;
+        width: 72.8em;
+        }
+
+    .filter-box > .clear {
+       position: relative;
+       top: 0.9rem;
+       left: 60.2rem;
+     }   
+}
